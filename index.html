@@ -5,173 +5,282 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://api.fontshare.com/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="dist/output.css">
-    <title>Chickly</title>
+    <title>Devdut Portfolio</title>
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/lty4rfv.css"> -->
+    <link rel="stylesheet" type="text/css" href="./dist/demo2.06b37b5f.css">
+    <script>document.documentElement.className = "js";
+        var supportsCssVars = function supportsCssVars() {
+            var e,
+                t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+        };
+
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 </head>
 
-<body>
-    <nav class="top-0 left-0 z-50 w-full bg-transparent 2md:fixed d-nav navbar-light">
-        <div class="px-3 py-2 mx-auto md:px-6 md:container 3xl:px-3">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center flex-shrink-0 nav-logo">
-                    <img src="/img//logo.png" alt="logo" class="object-cover w-32 h-auto md:w-full">
-                </div>
+<body class="loading noscroll">
+    <!--------------- navbar ---------------->
+    
+    <main data-scroll-container="">
+        <nav class="flex flex-wrap items-center justify-between w-full d-nav z-[999] bg-d-black">
+            <div class="w-full px-4 sm:px-5 xl:px-12.5">
+                <div class="flex items-center justify-between container-fluid">
+    
+                    <a class="inline-flex items-end text-xl font-semibold tracking-tighter brand-logo lg:text-2xl 3xl:text-3xl text-d-black"
+                        href="#"> <img src="./img/Devdut-Logo.svg" alt="DesignDesigns-Logo"> </a>
+    
+                    <!-- <ul class="items-center hidden space-x-12 sm:flex lg:space-x-12">
+                       
+    
+                        <li><a 
+                                class="text-xs text-white transition font-extralight 3xl:text-base hover:text-d-green hoverable">+91 9605091339</a>
+                        </li>
+                    </ul> -->
+    
+                    <div>
+                        <a target="_blank" 
+                        rel="noopener noreferrer" href="https://www.linkedin.com/in/devdut-suresh/index.html"
+                            class="hidden text-xs text-white transition 3xl:text-base hover:text-d-green hoverable md:block">LINKEDIN</a>
+                            <button class="block sm:hidden nav-icon" onclick="openMenu()">
+                                <div class="flex flex-col items-end space-y-2">
+                                    <span class="block w-8 h-0.5 bg-d-green"></span>
+                                    <span class="block w-5 h-0.5 bg-d-green"></span>
+                                </div>
+                            </button>
 
-                <div>
-                    <ul class="items-center hidden space-x-4 lg:space-x-5 xl:space-x-12 md:flex">
-                        <li class="hidden md:block nav-item">
-                            <a class="text-sm.5 font-medium nav-link" href="">Home</a>
-                        </li>
-                        <li class="hidden md:block nav-item">
-                            <a class="text-sm.5 font-medium nav-link" href="">Loans</a>
-                        </li>
-                        <li class="hidden md:block nav-item">
-                            <a class="text-sm.5 font-medium nav-link" href="">Tools</a>
-                        </li>
-                        <li class="hidden md:block nav-item">
-                            <a class="text-sm.5 font-medium nav-link" href="">Reduce your obligations</a>
-                        </li>
-                        <li class="hidden md:block nav-item">
-                            <a class="text-sm.5 font-medium nav-link" href="">Contact Us</a>
-                        </li>
-                    </ul>
-                    <button aria-label="menu-icon" class="block md:hidden nav-icon">
-                        <div class="space-y-2">
-                            <span class="block w-8 h-0.5 bg-gray-600"></span>
-                            <span class="block w-5 h-0.5 bg-gray-600"></span>
+                            <div class="side-menu" id="side-menu">
+                                <button onclick="closeMenu()" class="absolute bottom-0 flex items-center py-5 text-xl font-light text-center text-white -translate-x-1/2 left-1/2 nav-menus-wrapper-close-button">
+                                    <span class="mr-2">✕</span> CLOSE
+                                </button>
+                                <ul class="flex flex-col items-center justify-center h-full side-menu-ul">
+                                    <li class="side-item"><a class="side-link" href="index.html">Home</a></li>
+                                    <li class="side-item"><a onclick="closeMenu()" class="side-link" href="#footer">Contact Us</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </button>
+    
+    
                 </div>
             </div>
+    
+    
+        </nav>
+        <!--------------- Header top ---------------->
+        <div class="md:pt-10">
+            <div class="w-full px-4 sm:px-5 xl:px-12.5 hidden md:block ">
+                <img data-scroll="" data-scroll-speed="8" data-scroll-position="top" class="w-full content__title"
+                    src="./img/Designer.svg" alt="DESIGNER" loading="lazy">
+            </div>
+
+
+            <div class="md:mt-[48px] 3xl:mt-[82px]">
+                <div class="w-full md:border-y border-border-color border-class">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="relative w-full border-r opacity-0 md:w-1/2 md:py-16 px-14 border-border-color border-class md:opacity-100">
+                            <div class="content">
+                                <div class="gallery">
+                                    <figure class="gallery__item">
+                                        <div class="gallery__item-img">
+                                            <div class="gallery__item-imginner"
+                                                style="background-image: url(./img/devdut.jpg)"></div>
+                                        </div>
+                                        <figcaption class="gallery__item-caption">
+                                            <h2 class="gallery__item-title" data-splitting="">Questrial</h2>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="gallery__item">
+                                        <div class="gallery__item-img">
+                                            <div class="gallery__item-imginner"
+                                                style="background-image: url(./img/uximg3.jpg)"></div>
+                                        </div>
+                                        <figcaption class="gallery__item-caption">
+                                            <h2 class="gallery__item-title" data-splitting="">Questrial</h2>
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure class="gallery__item">
+                                        <div class="gallery__item-img">
+                                            <div class="gallery__item-imginner"
+                                                style="background-image: url(./img/uximg2.jpg)"></div>
+                                        </div>
+                                        <figcaption class="gallery__item-caption">
+                                            <h2 class="gallery__item-title" data-splitting="">Questrial</h2>
+                                        </figcaption>
+                                    </figure>
+
+                              
+
+                                 
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-between w-full md:w-1/2 md:pt-16">
+                            <div class="hidden px-5 pb-32 3xl:pb-60 md:px-14 md:block ">
+                                <p class="text-lg text-white font-extralight opacity-60 loading-text-inn">Creating Engaging & <br>
+                                    User-Centric
+                                    UI Designs</p>
+                            </div>
+
+                            <div>
+
+                                <div class="px-5 py-3 mx-4 mt-1 mb-5 md:px-14 bg-img-mob">
+                                    <h3 class="text-3xl font-bold text-white md:text-6xl 3xl:text-8xl loading-text-inn2">Devdut M Suresh</h3>
+                                    <ul class="flex items-center pt-4 space-x-6 md:pt-8 opacity-60 loading-text-inn2">
+                                        <li class="text-white text-md 3xl:text-xl font-extralight">
+                                            UX Designer
+                                        </li>
+                                        <li class="hidden md:block">
+                                            <img src="./img/star-symbol.svg" alt="*">
+                                        </li>
+                                        <li class="text-white text-md 3xl:text-xl font-extralight">
+                                            5 Years Of Experience
+                                        </li>
+                                        <li class="hidden md:block">
+                                            <img src="./img/star-symbol.svg" alt="*">
+                                        </li>
+                                        <li class="text-white text-md 3xl:text-xl font-extralight">
+                                            Visual Designer
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button
+                                    class="hidden w-full py-12 mt-16 text-center text-white border-t md:block 3xl:mt-24 border-border-color 3xl:py-14 hover:bg-white hover:text-d-black">
+                                    Download Resume
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="casestudies" class="px-4 sm:px-5 xl:px-12.5 py-0 md:py-12.5 casestudy-sec">
+                    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2">
+                        <a target="_blank" 
+                        rel="noopener noreferrer" href="https://elderly-collision-384.notion.site/Loan-Origination-System-fa474e786c764c53a4f7499334a315a6">
+                            <div><img class="w-full" src="./img/LOS-Cover.png" alt="case-study-img1">
+                                <h3 class="pt-4 pb-2 text-2xl font-medium text-white xl:text-4.5xl md:pt-10 md:w-10/12">Designing a Streamlined Business Loan Application Platform</h3>
+                                <p class="md:w-10/12 study-p">Build an intuitive, end-to-end loan application platform from scratch — enabling businesses to apply easily, track progress, and secure funding faster, with minimal manual intervention.
+                                </p>
+                            </div>
+                        </a>
+
+                        <div>
+                            <div><img class="w-full" src="./img/Intranet-portal-cover.png" alt="case-study-img1">
+                                <h3 class="pt-4 pb-2 text-2xl font-medium text-white xl:text-4.5xl md:pt-10 md:w-10/12">Designing an e-commerce
+                                    website for an architectural metals</h3>
+                                <p class="md:w-10/12 study-p">Comming Soon
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+
+
+
+
+                <section class="mt-20 tiles" id="grid">
+                    <div class="tiles__wrap">
+                        <div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid"
+                            data-scroll-direction="horizontal">
+                            <div class="tiles__line-img" style="background-image:url(img/LOS-Cover.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/DT-One.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/DT-Two.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/Carservices-One.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/Carservices-Two.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/Carservices-Three.png)"></div>
+                        </div>
+                        <div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid"
+                            data-scroll-direction="horizontal">
+                            <div class="tiles__line-img" style="background-image:url(img/Carservices-One.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/Carservices-Two.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/Carservices-One.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/amor-spa-one.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/LOS-Cover.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/LOS-Cover.png)"></div>
+                        </div>
+                        <div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid"
+                            data-scroll-direction="horizontal">
+                            <div class="tiles__line-img" style="background-image:url(img/Carservices-Three.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/DT-Three.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/Carservices-Three.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/LOS-Cover.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/LOS-Cover.png)"></div>
+                            <div class="tiles__line-img" style="background-image:url(img/LOS-Cover.png)"></div>
+                        </div>
+                    </div>
+                    <h2 class="tiles__title tiles__title--right tiles__title--full tiles__title--alt is-inview" data-scroll="" data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 30.6969, 0, 1);">Design Matters</h2>
+                </section>
+
+
+
+                <section class="footer">
+                    <a href="https://www.behance.net/devdutsuresh" target="_blank" 
+                    rel="noopener noreferrer" class="mailid is-inview" data-scroll="" data-scroll-speed="4" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.575, 0, 1);">View My Behance</a>
+                    <div class="flex flex-col items-center justify-between py-8 space-y-2 md:flex-row md:space-y-0">
+                        <div class="flex flex-col items-center space-y-2 md:space-x-6 md:flex-row md:space-y-0">
+                        <a href="">dmsdevdut@gmail.com</a>
+                        <a href="">+91 9605091339</a>
+                    </div>
+                        <div class="flex flex-col items-center space-y-2 md:space-x-6 md:flex-row md:space-y-0">
+                            <a target="_blank" 
+                            rel="noopener noreferrer" href="https://www.linkedin.com/in/devdut-suresh/index.html">LINKEDIN</a>
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+
         </div>
 
-        <!-- <div class="side-menu">
-            <span class="nav-menus-wrapper-close-button">✕</span>
-            <ul class="side-menu-ul">
-                <li class="side-item"><a class="side-link" href="">Home</a></li>
-                <li class="side-item"><a class="side-link" href="">About Us</a></li>
-                <li class="side-item"><a class="side-link" href="">Products</a></li>
-                <li class="side-item"><a class="side-link" href="">Contact</a></li>
-                <li class="side-item"><a class="side-link" href="">Book Demo</a></li>
-            </ul>
-        </div> -->
 
-    </nav>
-
-    <section class="w-full h-header-sec">
-        <div class="h-full px-3 mx-auto 2md:container md:px-6 3xl:px-3 h-inner">
-            <div class="content-center hidden h-full grid-cols-1 2md:grid md:grid-cols-2">
-                <div class="relative grid content-center justify-start h-full p-6 text-left">
-
-                    <div>
-                        <h6
-                            class="text-primary-black text-xl lg:text-2xl xl:text-3xl 1.9xl:text-4.5xl font-bold tracking-tighter pl-1 -mb-1 3xl:-mb-2">
-                            Looking for a
-                        </h6>
-                        <h1
-                            class="font-black gradient-head text-4xl lg:text-6xl xl:text-7xl 3xl:text-8xl tracking-tighter lg:tracking-tightest.5 3xl:tracking-tightest">
-                            PERSONAL LOAN</h1>
-                        <p
-                            class="pt-2 pl-1 text-sm leading-none tracking-tight xl:pt-4 lg:text-base xl:text-lg 3xl:text-xl 3xl:leading-6 opacity-80">
-                            Lorem ipsum dolor sit amet, consetetur
-                            sadipscing elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore </p>
-                    </div>
-                    <button  
-                        class="flex items-center px-8 py-3 mt-6 space-x-4 text-base font-medium text-white rounded-full btn-shadow lg:px-10 lg:py-4 lg:text-lg xl:mt-14 2xl:mt-8 3xl:text-xl 3xl:py-6 3xl:mt-14 3xl:px-14 bg-gradient-to-r from-primary-blue-01 to-primary-blue-02 w-fit">
-                        <span>Apply Now</span><svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 lg:w-5 lg:h-5 3xl:w-6 3xl:h-6" viewBox="0 0 25 25">
-                            <path id="Icon_ionic-ios-arrow-dropright-circle"
-                                data-name="Icon ionic-ios-arrow-dropright-circle"
-                                d="M3.375,15.875a12.5,12.5,0,1,0,12.5-12.5A12.5,12.5,0,0,0,3.375,15.875Zm14.694,0L13.147,11a1.16,1.16,0,1,1,1.641-1.641l5.733,5.751a1.159,1.159,0,0,1,.036,1.6l-5.649,5.667a1.158,1.158,0,1,1-1.641-1.635Z"
-                                transform="translate(-3.375 -3.375)" fill="#fff" />
-                        </svg>
-                    </button>
-
-                    <div
-                        class="bottom-0 flex items-center space-x-12 lg:absolute mt-9 3xl:mt-0 2xl:bottom-12 3xl:-bottom-6 left-6">
-                        <div>
-                            <div class="text-xl font-black lg:text-2xl 3xl:text-3xl">1000+</div>
-                            <div class="font-medium leading-tight text-xxs lg:text-xs 3xl:text-sm">Satisfied Customers
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="text-xl font-black lg:text-2xl 3xl:text-3xl">100+</div>
-                            <div class="font-medium leading-tight text-xxs lg:text-xs 3xl:text-sm">Nationwide Partner
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="text-xl font-black lg:text-2xl 3xl:text-3xl">4</div>
-                            <div class="font-medium leading-tight text-xxs lg:text-xs 3xl:text-sm">Years Of Experience
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                <div class="grid content-center justify-center h-full p-3 lg:p-10 2xl:p-28 3xl:p-16 md:flex ">
-                    <div>
-                        <picture>
-                            <source type="image/webp" srcset="/img/header-img.webp">
-                            <img src="/img/header-img.png" class="w-full mx-auto" alt="chickly" loading=“lazy”
-                                decoding=“async”>
-                        </picture>
-                        <!-- <img src="/img/Iphone-Mockup.png" class="mx-auto" alt="Mockup" loading=“lazy” decoding=“async”> -->
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!----------- mobile view card ----------->
-
-            <div class="relative block p-5 sm.5:p-8 mt-6 bg-primary-light-blue-01 rounded-2xl 2md:hidden">
-                <h6 class="pl-0.5 text-xs sm.5:text-base font-medium">Looking for a loan</h6>
-                <h6
-                    class="text-xl xxxs:text-2xl xxs:text-3xl xs:text-4xl sm.5:text-4.5xl font-black leading-none tracking-tighter ">
-                    Easy, Affordable &<br>Faster </h6>
-                <button aria-label="apply now"
-                    class="flex items-center px-4 py-2.5 xk:py-3 mt-6 space-x-4 text-xs font-medium text-white rounded-full xs:px-6 xs:text-sm btn-shadow lg:px-10 lg:py-4 lg:text-lg xl:mt-14 2xl:mt-8 3xl:text-xl 3xl:py-6 3xl:mt-14 3xl:px-14 bg-gradient-to-r from-primary-blue-01 to-primary-blue-02 w-fit">
-                    Apply Now<svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-3.5 h-3.5"
-                        viewBox="0 0 25 25">
-                        <path id="Icon_ionic-ios-arrow-dropright-circle"
-                            data-name="Icon ionic-ios-arrow-dropright-circle"
-                            d="M3.375,15.875a12.5,12.5,0,1,0,12.5-12.5A12.5,12.5,0,0,0,3.375,15.875Zm14.694,0L13.147,11a1.16,1.16,0,1,1,1.641-1.641l5.733,5.751a1.159,1.159,0,0,1,.036,1.6l-5.649,5.667a1.158,1.158,0,1,1-1.641-1.635Z"
-                            transform="translate(-3.375 -3.375)" fill="#fff" />
-                    </svg>
-                </button>
-
-                <span
-                    class="absolute z-10 hidden p-2 text-xs font-medium rounded-md xs:text-sm bg-primary-light-yellow opacity-90 right-3 bottom-3 xxxs:block">Instan
-                    Loan</span>
-
-
-                <div>
-                    <picture>
-                        <source type="image/webp" srcset="/img/chickly-head-mobile.webp">
-                        <img src="/img/chickly-head-mobile.png"
-                            class="absolute bottom-0 object-cover xxxs:block hidden w-40 xxs:w-44 xs:w-52 sm.5:w-72 h-auto -right-2 xs:-right-4"
-                            alt="chickly" loading=“lazy” decoding=“async”>
-                    </picture>
-                    <!-- <img src="/img/Iphone-Mockup.png" class="mx-auto" alt="Mockup" loading=“lazy” decoding=“async”> -->
-                </div>
-                <!-- <img src="img/chickly-head-mobile.png" alt="chickly"
-                    class="absolute bottom-0 object-cover xxxs:block hidden w-40 xxs:w-44 xs:w-52 sm.5:w-72 h-auto -right-2 xs:-right-4"> -->
-            </div>
-
-            <!----------- mobile view card end ----------->
 
         </div>
-    </section>
+
+
+        </div>
 
 
 
+        <!--------------- third section ---------------->
+
+
+    </main>
+    <svg class="cursor" width="30" height="30" viewBox="0 0 30 30">
+        <circle class="cursor__inner" cx="15" cy="15" r="7.5"></circle>
+    </svg>
+    <script src="./js/main.js"></script>
+
+    <script>
+        
+function openMenu() {
+    var elem = document.getElementById("side-menu");
+    elem.classList.add("active");
+  }
+  
+  function closeMenu() {
+    var elem = document.getElementById("side-menu");
+    elem.classList.remove("active");
+  }
+    </script>
+
+
+    <script src="./dist/demo2.44794d1a.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> -->
+    <!-- <script src="https://tympanus.net/codrops/adpacks/cda.js"></script> -->
 </body>
 
 </html>
